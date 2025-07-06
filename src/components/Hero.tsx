@@ -84,7 +84,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                                 <Mail size={24} className={darkMode ? 'text-white' : 'text-gray-900'} />
                             </a>
                             <a
-                                href="https://github.com/AdityaPawar6174/aditya-pawar/blob/main/public/resume.pdf"
+                                href={`${import.meta.env.BASE_URL}resume.pdf`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={`p-2 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-gray-200 hover:bg-gray-300'} transition-colors duration-300`}
@@ -99,7 +99,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
                     <div className="lg:w-1/2 flex justify-center">
                         <div className={`relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-[50px] overflow-hidden border-4 ${darkMode ? 'border-purple-600 shadow-lg shadow-blue-500/20' : 'border-purple-500 shadow-lg'}`}>
                             <img
-                                src="https://github.com/AdityaPawar6174/aditya-pawar/blob/main/public/Aditya.jpeg"
+                                src={`${import.meta.env.BASE_URL}Aditya.jpeg`}
                                 alt="Aditya Pawar"
                                 className="w-full h-full object-cover"
                             />
