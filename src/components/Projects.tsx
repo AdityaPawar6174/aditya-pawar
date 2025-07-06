@@ -24,10 +24,10 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
     {
       id: 1,
       title: "CuisineVerse – Scalable Recipe Discovery Platform",
-      githubUrl: "/aditya-pawar/image2.png",
+      githubUrl: "https://github.com/AdityaPawar6174/cuisineverse-discover-amazing-recipes",
       description: "Responsive web app to explore 1000+ global recipes with real-time filtering.",
       longDescription: "Built a full-featured recipe discovery platform using React.js and Firebase. Implemented real-time API search, cuisine-based filtering, dietary tag selection, and responsive UI. Achieved a Lighthouse performance score of over 95. Designed with modular components and optimized for mobile and desktop interfaces.",
-      image: "https://github.com/AdityaPawar6174/aditya-pawar/blob/main/public/image2.png",
+      image: "https://images.unsplash.com/photo-1601972602288-3be527b4f18a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["React.js", "Firebase", "JavaScript", "REST APIs", "CSS"],
       category: "frontend"
     },

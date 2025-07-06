@@ -18,7 +18,7 @@ const Education: React.FC<EducationProps> = ({ darkMode }) => {
         {
             icon: <BookOpen size={24} className="text-purple-600" />,
             title: 'Higher Secondary (HSC)',
-            institution: 'Arts, Commerce and Science College, Nandgaon ',
+            institution: 'Arts, Commerce and Science College, Nandgaon',
             board: 'Maharashtra State Board',
             year: '2022',
             score: '81.00%',
@@ -38,33 +38,25 @@ const Education: React.FC<EducationProps> = ({ darkMode }) => {
             id="education"
             className={`py-20 ${darkMode ? 'bg-gray-900 text-white' : 'bg-purple-50 text-gray-900'}`}
         >
-            <div className="container mx-auto px-6 lg:px-12">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4">Education</h2>
                     <div className="w-24 h-1 bg-purple-600 mx-auto"></div>
                 </div>
 
                 <div className="relative">
-                    {/* Vertical timeline line */}
-                    <div className="absolute left-8 top-0 h-full w-[2px] bg-purple-500 rounded-full z-0"></div>
+                    <div className="absolute left-5 sm:left-10 top-0 h-full w-[2px] bg-purple-500 rounded-full z-0"></div>
 
-                    <div className="space-y-20 pl-12">
+                    <div className="space-y-16 pl-8 sm:pl-14">
                         {timelineItems.map((item, index) => (
-                            <div key={index} className="relative flex items-start">
-                                {/* Checkpoint + Horizontal line */}
-                                <div className="relative z-10">
-                                    {/* Outer circle */}
-                                    <span className="absolute left-[-27px] top-15 w-6 h-6 rounded-full bg-purple-300 opacity-40"></span>
-                                    {/* Inner circle */}
-                                    <span className="absolute left-[-23px] top-16 w-4 h-4 rounded-full bg-purple-600 z-10"></span>
-
-                                    {/* Horizontal connector line */}
-                                    <div className="absolute top-18 left-[-5px] w-10 md:w-51 h-[1px] bg-purple-300"></div>
+                            <div key={index} className="relative flex flex-col sm:flex-row items-start">
+                                <div className="relative z-10 flex-shrink-0">
+                                    <span className="absolute left-[-14px] sm:left-[-26px] top-20 w-6 h-6 rounded-full bg-purple-300 opacity-40 animate-pulse"></span>
+                                    <span className="absolute left-[-10px] sm:left-[-22px] top-21 w-4 h-4 rounded-full bg-purple-600 z-10"></span>
                                 </div>
 
-                                {/* Content box */}
                                 <div
-                                    className={`ml-50 p-6 w-full max-w-5xl border rounded-2xl shadow-md transition-all duration-300 ${
+                                    className={`mt-6 sm:mt-0 sm:ml-20 p-6 w-full border rounded-2xl shadow-md transition-all duration-300 ${
                                         darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
                                     }`}
                                 >
